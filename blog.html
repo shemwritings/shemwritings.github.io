@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sulatan.com</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background: linear-gradient(to right, cyan, red);
+        }
+
+        header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+            margin: 0 20px;
+            cursor: pointer;
+        }
+
+        section {
+            text-align: center;
+            margin-top: 20px;
+            display: none;
+        }
+
+        hr {
+            border: 1px solid #333;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 4px 8px;
+            background-color: #CCCCCC;
+            color: black;
+            text-decoration: none;
+            border-radius: 3px;
+            margin-right: 10px;
+        }
+
+        .sample-text {
+            color: blue;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Shem's Webpage</h1>
+    </header>
+
+    <nav>
+        <a onclick="showPage('home')">Home Page</a>
+        <a onclick="showPage('blog')">ITIII Blog Entries Page</a>
+        <a onclick="showPage('flex')">Flex Page</a>
+    </nav>
+
+    <section id="home">
+        <p>My name is Shem C. Sulatan and I am 23 years old, currently living in Kalasungay, Malaybalay City.</p>
+		<P>My hobbies includes playing basketball, watching anime, reading story books, and playing online games.</p>
+		
+		<p>Connect with me on <a href="social-media-link">https://www.facebook.com/profile.php?id=100009818929225&mibextid=ZbWKwL</a></p>
+		
+		
+		<img src="C:\Users\Shem\Documents\intro to computing\music.jpg" alt="misic" width="300" height="200">
+		<img src="C:\Users\Shem\Documents\intro to computing\money 1.jfif" alt="money" width="300" height="175">
+		<img src="C:\Users\Shem\Documents\intro to computing\success 2.png" alt="success" width="300" height="175">
+		<img src="C:\Users\Shem\Documents\intro to computing\download.jfif" alt="family" width="300" height="200">
+		<p> 8 years from now I hope i'm still doing my hobby which is singing, and i hope i am earning money from a noble job, togehter with my family.</p>
+
+
+	</section>
+
+    <section id="blog">
+		
+        <p> Output/learning every lesson</p>
+		<p> &nbsp; &nbsp; </p>
+		<p> 1.) learning the details of attack </p>
+		<p> 2.) visualizing the black hats</p>		
+		<p> 3.) Using wireshark to examine http and https traffic in kali linux</p>
+		<p> 4.) Basic HTML and CSS</p>
+		<img src="C:\Users\Shem\Documents\intro to computing\docu\slide1.jpg" alt="description" width=50% height= auto;>
+		<img src="C:\Users\Shem\Documents\intro to computing\docu\slide2.jpg" alt="description" width=50% height= auto;>
+		<img src="C:\Users\Shem\Documents\intro to computing\docu\slide3.jpg" alt="description" width=50% height= auto;>
+		<img src="C:\Users\Shem\Documents\intro to computing\docu\slide4.jpg" alt="description" width=50% height= auto;>
+		
+		<p> &nbsp; &nbsp; </p>
+		<p> &nbsp; &nbsp; </p>
+		<p> &nbsp; &nbsp; </p>
+		<p> &nbsp; &nbsp; </p>
+		<p>  My favorite and the most challenging lesson i encountered is Using wireshark to examine http and https traffic in kali linux
+		
+		<p> &nbsp; &nbsp; </p>
+		<p> &nbsp; &nbsp; </p>
+		
+		<img src="C:\Users\Shem\Documents\intro to computing\docu\slide3.jpg" alt="favorite and challenging lesson"width=50% height= auto;>
+    </section>
+
+    <section id="flex">
+        <p>I just want to flex my Family who loves me even if i am the black sheep in our home</p>
+		<img src="C:\Users\Shem\Documents\intro to computing\fam.jpg" alt="description" width=50% height= auto;>
+		<img src="C:\Users\Shem\Documents\intro to computing\fam 2.jpg" alt="description" width=50% height= auto;>
+		
+    </section>
+
+    <footer>
+        <p>V. 1.0 | Credits: Shem C. Sulatan</p>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            var sections = document.querySelectorAll('section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+
+            var selectedSection = document.getElementById(pageId);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
